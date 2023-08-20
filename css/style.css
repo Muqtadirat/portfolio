@@ -49,34 +49,50 @@ h2 {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media query for mobile */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 62px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
 }
 
 /* Media query for desktop and above */
 @media (min-width: 992px) {
-.name {
-  position: relative;
-  overflow: hidden;
-  border-right: 2px solid hsl(0, 0%, 80%);
-  white-space: nowrap;
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms infinite;
-}
+  .name {
+    position: relative;
+    overflow: hidden;
+    border-right: 2px solid hsl(0, 0%, 80%);
+    white-space: nowrap;
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+      blinkTextCursor 500ms infinite;
+  }
 
-@keyframes typewriter {
-  from {
-    width: 0;
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 800px;
+    }
   }
-  to {
-    width: 800px;
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: hsl(0, 0%, 80%);
+    }
+    to {
+      border-right-color: transparent;
+    }
   }
 }
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: hsl(0, 0%, 80%);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}}
