@@ -77,6 +77,10 @@ h3 {
     display: block;
   }
 
+  .container-fluid{
+    margin-bottom: 28px;
+  }
+
   .about-me {
     margin-bottom: 40px;
   }
