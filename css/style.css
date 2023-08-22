@@ -14,6 +14,7 @@ p {
   font-size: 20px;
 }
 
+h3,
 ul {
   font-family: "Kaushan Script", cursive;
   font-size: 28px;
@@ -21,6 +22,7 @@ ul {
 
 h1,
 h2,
+h3,
 p,
 ul {
   color: #fff;
@@ -32,6 +34,10 @@ h1 {
 
 h2 {
   font-size: 64px;
+}
+
+h3 {
+  font-size: 36px;
 }
 
 /*Class*/
@@ -65,6 +71,18 @@ h2 {
 
   h2 {
     font-size: 48px;
+  }
+
+  #about {
+    display: block;
+  }
+
+  .about-me {
+    margin-bottom: 40px;
+  }
+
+  .skill-cont{
+    margin-right: 40px;
   }
 }
 
