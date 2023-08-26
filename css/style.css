@@ -42,7 +42,18 @@ h3 {
 
 /*Class*/
 .contact-icon {
-  font-size: 28px;
+  font-size: 38px;
+}
+
+.contact-text:hover{
+color: #00bbf0;
+transition: 200ms ease-in-out;
+
+}
+
+.contact-text{
+ font-family: "Kaushan Script", cursive;
+ font-size: 28px;
 }
 
 .loader {
