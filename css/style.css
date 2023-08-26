@@ -48,6 +48,7 @@ h3 {
 .contact-text:hover{
 color: #00bbf0;
 transition: 200ms ease-in-out;
+text-decoration: underline;
 
 }
 
