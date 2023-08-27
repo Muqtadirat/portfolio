@@ -41,38 +41,24 @@ h3 {
 }
 
 /*Class*/
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #fff;
+}
+
 .contact-icon {
   font-size: 38px;
 }
 
-.contact-text:hover{
-color: #00bbf0;
-transition: 200ms ease-in-out;
-text-decoration: underline;
-
+.contact-text:hover {
+  color: #00bbf0;
+  transition: 200ms ease-in-out;
+  text-decoration: underline;
 }
 
-.contact-text{
- font-family: "Kaushan Script", cursive;
- font-size: 28px;
-}
-
-.loader {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.contact-text {
+  font-family: "Kaushan Script", cursive;
+  font-size: 28px;
 }
 
 /* Media query for mobile */
@@ -89,7 +75,7 @@ text-decoration: underline;
     display: block;
   }
 
-  .container-fluid{
+  .container-fluid {
     margin-bottom: 28px;
   }
 
@@ -97,7 +83,7 @@ text-decoration: underline;
     margin-bottom: 40px;
   }
 
-  .skill-cont{
+  .skill-cont {
     margin-right: 40px;
   }
 }
@@ -128,5 +114,10 @@ text-decoration: underline;
     to {
       border-right-color: transparent;
     }
+  }
+
+  .accordion-button:not(.collapsed) {
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    border-left: 2em solid #000;
   }
 }
